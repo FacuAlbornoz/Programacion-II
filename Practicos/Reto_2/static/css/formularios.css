@@ -1,0 +1,56 @@
+/* static/css/formularios.css */
+@import url('colores.css');
+
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: var(--radio-caja);
+    box-shadow: var(--sombra-suave);
+    margin-top: 40px;
+    border-top: 5px solid var(--color-secundario);
+}
+
+.grupo-control {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-control label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-primario);
+}
+
+.grupo-control input, 
+.grupo-control textarea {
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estado Activo del Input */
+.grupo-control input:focus, 
+.grupo-control textarea:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.boton-enviar {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.boton-enviar:hover {
+    background-color: var(--color-secundario);
+}

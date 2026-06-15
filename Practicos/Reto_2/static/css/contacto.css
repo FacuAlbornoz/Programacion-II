@@ -1,0 +1,43 @@
+/* static/css/contacto.css */
+@import url('colores.css');
+
+.seccion-contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta-contacto {
+    background: #ffffff;
+    padding: var(--padding-estandar);
+    border-radius: var(--radio-caja);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto CSS3 al pasar el mouse */
+.tarjeta-contacto:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-suave);
+    border-color: var(--color-secundario);
+}
+
+.tarjeta-contacto h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--color-secundario);
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 10px;
+}
+
+.info-link {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+    color: var(--color-activo);
+}
