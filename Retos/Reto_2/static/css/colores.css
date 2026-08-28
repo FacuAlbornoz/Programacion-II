@@ -1,0 +1,17 @@
+:root {
+    /* Colores */
+    --color-primario: #0f172a;    
+    --color-secundario: #3b82f6;  
+    --color-activo: #10b981;      
+    --color-desactivo: #64748b;   
+
+    /* Variables de Espaciado y Estilo */
+    --padding-estandar: 15px;
+    --margin-general: 20px;
+    --radio-caja: 12px;
+    --sombra-suave: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+    /* Textos */
+    --fuente-titulos: 'Poppins', sans-serif;
+    --fuente-cuerpo: 'Inter', sans-serif;
+}

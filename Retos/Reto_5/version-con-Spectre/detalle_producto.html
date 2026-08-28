@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Producto | Velos</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+<body>
+
+    <!-- 1.Encabezado -->
+    <header class="bg-gray shadow-sm">
+    
+        <div class="navbar p-2">
+            <!-- Logo -->
+            <section class="navbar-section">
+                <a href="index.html" class="navbar-brand text-dark d-flex flex-centered text-bold">
+                    <img src="./img/index/logo.png" alt="Logo Velos" width="80" class="mr-2">
+                    <span>VELOS</span>
+                </a>
+            </section>
+
+            <!-- Enlaces -->
+            <section class="navbar-center hide-lg">
+                <a href="#" class="btn btn-link text-dark text-bold">Destacados</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Hombre</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Mujer</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Niños</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Accesorios</a>
+                <a href="#" class="btn btn-link text-error text-bold">SALE</a>
+            </section>
+            
+            <!-- Buscador y Carrito -->
+            <section class="navbar-section p-2">
+                <!-- Buscador -->
+                <div class="has-icon-left mr-2 hide-lg">
+                    <input class="form-input bg-gray chip" type="text" placeholder="Buscar...">
+                    <i class="form-icon icon icon-search"></i>
+                </div>
+                
+                <!-- Carrito -->
+                <a href="#" class="btn btn-link text-dark">
+                    <svg width="24" height="24" stroke="currentColor" xmlns="http://w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+                
+                <!-- Accion y boton para movil -->
+                <a onclick="document.getElementById('menu-movil').classList.toggle('d-hide')" class="btn btn-link text-dark show-lg c-hand">
+                    <i class="icon icon-menu"></i>
+                </a>
+            </section>
+        </div>
+
+        <!-- Menu para Movil -->
+        <div id="menu-movil" class="d-hide show-lg mt-2">
+            <div class="has-icon-left mb-2">
+                <input class="form-input" type="text" placeholder="Buscar productos...">
+                <i class="form-icon icon icon-search"></i>
+            </div>
+            <a href="#" class="btn btn-link btn-block text-dark text-left text-bold">Destacados</a>
+            <a href="#" class="btn btn-link btn-block text-dark text-left text-bold">Hombre</a>
+            <a href="#" class="btn btn-link btn-block text-dark text-left text-bold">Mujer</a>
+            <a href="#" class="btn btn-link btn-block text-error text-left text-bold">SALE</a>
+        </div>
+
+    </header>
+
+    <!-- Contenido de pag -->
+    <main class="container grid-xl py-2 my-2">
+        
+        <!-- Boton Volver -->
+        <a href="index.html" class="btn btn-link text-gray text-bold mb-2">
+            <i class="icon icon-arrow-left"></i> Volver a la tienda
+        </a>
+        
+        <div class="columns">
+            
+            <!-- Galería de Imágenes -->
+            <div class="column col-7 col-md-12 p-2">
+                
+                <!-- Imagen Principal -->
+                <div class="bg-gray s-rounded p-2 mb-2 d-flex flex-centered">
+                    <img id="prod-img-principal" src="" alt="Producto" class="img-responsive" width="400">
+                </div>
+
+                <div id="prod-miniaturas" class="d-flex flex-centered flex-wrap">
+
+                </div>
+            </div>
+        
+            <!-- Info y Compra -->
+            <div class="column col-5 col-md-12 p-2">
+                
+                <!-- Titulos -->
+                <div>
+                    <!-- Marca -->
+                    <span id="prod-marca" class="label label-secondary text-uppercase text-bold">Cargando...</span>
+                    <!-- Nombre -->
+                    <h1 id="prod-nombre" class="h2 text-dark text-bold mt-2 mb-1">Cargando...</h1>
+                    <!-- Precio -->
+                    <p id="prod-precio" class="h3 text-primary text-bold m-0">$ 0</p>
+                </div>
+                
+                <div class="divider my-2"></div>
+                
+                <!-- Talles -->
+                <div>
+                    <p class="text-dark text-bold mb-2">Seleccionar Talle (US)</p>
+                    <div class="columns">
+                        <div class="column col-4 col-sm-4 mb-2"><button class="btn btn-block">38</button></div>
+                        <div class="column col-4 col-sm-4 mb-2"><button class="btn btn-block">39</button></div>
+                        <div class="column col-4 col-sm-4 mb-2"><button class="btn btn-block">40</button></div>
+                        <div class="column col-4 col-sm-4 mb-2"><button class="btn btn-block">41</button></div>
+                        <div class="column col-4 col-sm-4 mb-2"><button class="btn btn-block">42</button></div>
+                        <div class="column col-4 col-sm-4 mb-2"><button class="btn btn-block">43</button></div>
+                    </div>
+                </div>
+                
+                <!-- Agregar al Carrito -->
+                <button class="btn btn-primary btn-lg btn-block text-bold text-uppercase mt-2">
+                    Agregar al Carrito
+                </button>
+                
+                <div class="divider my-2"></div>
+                
+                <!-- Descripción -->
+                <div>
+                    <h3 class="h5 text-bold text-dark mb-1">Descripción</h3>
+                    <p id="prod-desc" class="text-dark">
+                        Cargando descripción...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light p-2">
+        <div class="container grid-xl my-2">
+            <div class="columns">
+                
+                <!-- Logo y frase -->
+                <div class="column col-3 col-md-12">
+                    <div class="tile tile-centered mb-2">
+                        <div class="tile-icon">
+                            <img src="img/index/logo.png" alt="Velos Logo" class="img-responsive" width="90">
+                        </div>
+                        <div class="tile-content">
+                            <p class="h4 text-bold text-light m-0 text-italic">VELOS</p>
+                        </div>
+
+                    </div>
+                    <p class="text-gray mt-1">Tu energía. Tu estilo. Tu momento.</p>
+                </div>
+
+                <!-- Productos -->
+                <div class="column col-2 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">PRODUCTOS</h6>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="text-gray">Hombre</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Mujer</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Niños</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Accesorios</a></li>
+                        </ul>
+                    </div>
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">PRODUCTOS</p>
+                            <a onclick="document.getElementById('menu_foot_producto').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <ul id="menu_foot_producto" class="nav d-hide mt-1">
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Hombre</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Mujer</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Niños</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Accesorios</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Empresa -->
+                <div class="column col-2 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">EMPRESA</h6>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="text-gray">Sobre nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Trabajá con nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Sucursales</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Prensa</a></li>
+                        </ul>
+                    </div>
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">EMPRESA</p>
+                            <a onclick="document.getElementById('menu_foot_empresa').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <ul id="menu_foot_empresa" class="nav d-hide mt-1">
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Sobre nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Trabajá con nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Sucursales</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Prensa</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ayuda -->
+                <div class="column col-2 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">AYUDA</h6>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="text-gray">Preguntas Frecuentes</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Envíos y Entregas</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Cambios y Devoluciones</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">AYUDA</p>
+                            <a onclick="document.getElementById('menu_foot_ayuda').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <ul id="menu_foot_ayuda" class="nav d-hide mt-1">
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Preguntas Frecuentes</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Envíos y Entregas</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Cambios y Devoluciones</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="column col-3 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">NEWSLETTER</h6>
+                        <p class="text-gray mb-1">Suscribite y recibí novedades.</p>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-input" placeholder="Tu email">
+                            <button class="btn btn-primary input-group-btn">→</button>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-action s-circle mr-1">X</a>
+                            <a href="#" class="btn btn-action s-circle mr-1">f</a>
+                            <a href="#" class="btn btn-action s-circle">in</a>
+                        </div>
+                    </div>
+
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">NEWSLETTER</p>
+                            <a onclick="document.getElementById('menu_foot_novedades').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <div id="menu_foot_novedades" class="d-hide mt-1">
+                            <p class="text-gray mb-1">Suscribite y recibí novedades.</p>
+                            <div class="input-group mb-2">
+                                <input type="email" class="form-input" placeholder="Tu email">
+                                <button class="btn btn-primary input-group-btn">→</button>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-action s-circle mr-1">X</a>
+                                <a href="#" class="btn btn-action s-circle mr-1">f</a>
+                                <a href="#" class="btn btn-action s-circle">in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Separador-->
+            <div class="divider text-center" data-content=""></div>
+
+            <!-- Derechos -->
+            <div class="columns text-gray text-small mt-2 pt-2">
+                <div class="column col-6 col-sm-12">
+                    <p class="m-0">📍 <strong>Río Cuarto, Córdoba.</strong> © 2026 Velos S.R.L. Todos los derechos reservados.</p>
+                </div>
+                <div class="column col-6 col-sm-12 text-right hide-md">
+                    <a href="#" class="text-gray mr-2">Términos y condiciones</a>
+                    <a href="#" class="text-gray">Política de privacidad</a>
+                </div>
+                <div class="column col-12 col-sm-12 show-md p-2">
+                    <a href="#" class="text-gray mr-2">Términos y condiciones</a>
+                    <a href="#" class="text-gray">Política de privacidad</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // "Base de Datos"
+        const baseDeDatos = {
+            'adidas_ultra': {
+                marca: 'Adidas',
+                nombre: 'Ultra Energy',
+                precio: '$249.999',
+                descripcion: 'Diseñadas para maximizar el retorno de energía en cada pisada. Las Adidas Ultra Energy combinan una amortiguación superior con un ajuste envolvente y liviano, ideal tanto para entrenar como para el uso urbano.',
+                imagenes: [
+                    'img/productos/adidas_ultra_energy/r1.png',
+                    'img/productos/adidas_ultra_energy/r2.png',
+                    'img/productos/adidas_ultra_energy/r3.png',
+                    'img/productos/adidas_ultra_energy/r4.png',
+                    'img/productos/adidas_ultra_energy/r5.png',
+                    'img/productos/adidas_ultra_energy/r6.png'
+                ]
+            },
+            'duobleb_casual': {
+                marca: 'Duobleb',
+                nombre: 'Casual',
+                precio: '$289.999',
+                descripcion: 'Un diseño versátil enfocado en el confort diario. Las Double B Casual combinan líneas modernas con materiales livianos para un calzado cómodo y duradero.',
+                imagenes: [
+                    'img/productos/duobleb_casual/r1.png',
+                    'img/productos/duobleb_casual/r2.png',
+                    'img/productos/duobleb_casual/r3.png',
+                    'img/productos/duobleb_casual/r4.png',
+                    'img/productos/duobleb_casual/r5.png',
+                    'img/productos/duobleb_casual/r6.png'
+                ]
+            },
+            'nike_court': {
+                marca: 'Nike',
+                nombre: 'Court Version',
+                precio: '$219.999',
+                descripcion: 'Inspiradas en el estilo del básquetbol de los 80, las Nike Court Vision fusionan una estética retro de la cancha con el confort moderno para el uso diario.',
+                imagenes: [
+                    'img/productos/nike_court_version/r1.png',
+                    'img/productos/nike_court_version/r2.png',
+                    'img/productos/nike_court_version/r3.png',
+                    'img/productos/nike_court_version/r4.png',
+                    'img/productos/nike_court_version/r5.png',
+                    'img/productos/nike_court_version/r6.png'
+                ]
+            }
+        };
+
+        // Leo la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        // Si no hay ID en la URL, mostramos la primera por defecto
+        const idProducto = urlParams.get('id') || 'adidas_ultra'; 
+        const productoCargado = baseDeDatos[idProducto];
+
+        if(productoCargado) {
+            // Reemplazo los textos
+            document.getElementById('prod-marca').innerText = productoCargado.marca;
+            document.getElementById('prod-nombre').innerText = productoCargado.nombre;
+            document.getElementById('prod-precio').innerText = productoCargado.precio;
+            document.getElementById('prod-desc').innerText = productoCargado.descripcion;
+            
+            // Imagen principal
+            document.getElementById('prod-img-principal').src = productoCargado.imagenes[0];
+
+            // Imagenes secundarias - miniaturas
+            const contenedorMiniaturas = document.getElementById('prod-miniaturas');
+            productoCargado.imagenes.forEach(imgSrc => {
+                
+                
+                const figure = document.createElement('figure');
+                figure.className = "avatar avatar-xl bg-gray m-1 c-hand";
+                figure.onclick = () => document.getElementById('prod-img-principal').src = imgSrc;
+                
+                const img = document.createElement('img');
+                img.src = imgSrc;
+                img.className = "p-1";
+                
+                figure.appendChild(img);
+                contenedorMiniaturas.appendChild(figure);
+            });
+        } else {
+            document.getElementById('prod-nombre').innerText = "Producto no encontrado";
+        }
+    </script>
+</body>
+</html>

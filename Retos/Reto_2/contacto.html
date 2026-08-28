@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Facundo Albornoz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/css/colores.css">
+    <link rel="stylesheet" href="static/css/layout.css">
+    <link rel="stylesheet" href="static/css/componentes.css">
+    <link rel="stylesheet" href="static/css/navegacion.css">
+    <link rel="stylesheet" href="static/css/contacto.css">
+    <link rel="stylesheet" href="static/css/formularios.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="formacion.html">Formación</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor">
+        <section>
+            <h2>Canales de Contacto</h2>
+            <div class="seccion-contacto">
+                <div class="tarjeta-contacto">
+                    <h3>Email Directo</h3>
+                    <p><a href="mailto:facualbornoz50@gmail.com" class="info-link">facualbornoz50@gmail.com</a></p>
+                </div>
+                <div class="tarjeta-contacto">
+                    <h3>Teléfono / WhatsApp</h3>
+                    <p><a href="tel:3584822565" class="info-link">+54 358 4822565</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario-contacto">
+            <h3>Enviame un mensaje directo</h3>
+            <form action="#" method="POST">
+                <div class="grupo-control">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+
+                <div class="grupo-control">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-control">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje">
+                </div>
+
+                <div class="grupo-control">
+                    <label for="mensaje">Tu Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar Formulario</button>
+            </form>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h2>Referencias Profesionales</h2>
+            <div class="seccion-contacto">
+                <div class="tarjeta-contacto">
+                    <h3>Álvaro Mola</h3>
+                    <p>Omnitec / Loop Agtech</p>
+                    <p><strong>Contacto:</strong> 3586543523</p>
+                </div>
+                <div class="tarjeta-contacto">
+                    <h3>Pablo Magdalena</h3>
+                    <p>Inst. Técnico Sta. M. T. Goretti</p>
+                    <p><strong>Contacto:</strong> 3584163064</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

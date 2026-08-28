@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velos | Reto5-Equipo 13</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="bg-gray shadow-sm">
+    
+        <div class="navbar p-2">
+            <!-- Logo -->
+            <section class="navbar-section">
+                <a href="index.html" class="navbar-brand text-dark d-flex flex-centered text-bold">
+                    <img src="./img/index/logo.png" alt="Logo Velos" width="80" class="mr-2">
+                    <span>VELOS</span>
+                </a>
+            </section>
+
+            <!-- Enlaces -->
+            <section class="navbar-center hide-lg">
+                <a href="#" class="btn btn-link text-dark text-bold">Destacados</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Hombre</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Mujer</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Niños</a>
+                <a href="#" class="btn btn-link text-dark text-bold">Accesorios</a>
+                <a href="#" class="btn btn-link text-error text-bold">SALE</a>
+            </section>
+            
+            <!-- Buscador y Carrito -->
+            <section class="navbar-section p-2">
+                <!-- Buscador -->
+                <div class="has-icon-left mr-2 hide-lg">
+                    <input class="form-input bg-gray chip" type="text" placeholder="Buscar...">
+                    <i class="form-icon icon icon-search"></i>
+                </div>
+                
+                <!-- Carrito -->
+                <a href="#" class="btn btn-link text-dark">
+                    <svg width="24" height="24" stroke="currentColor" xmlns="http://w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+                
+                <!-- Accion y boton para movil -->
+                <a onclick="document.getElementById('menu-movil').classList.toggle('d-hide')" class="btn btn-link text-dark show-lg c-hand">
+                    <i class="icon icon-menu"></i>
+                </a>
+            </section>
+        </div>
+
+        <!-- Menu para Movil -->
+        <div id="menu-movil" class="d-hide show-lg mt-2">
+            <div class="has-icon-left mb-2">
+                <input class="form-input" type="text" placeholder="Buscar productos...">
+                <i class="form-icon icon icon-search"></i>
+            </div>
+            <a href="#" class="btn btn-link btn-block text-dark text-left text-bold">Destacados</a>
+            <a href="#" class="btn btn-link btn-block text-dark text-left text-bold">Hombre</a>
+            <a href="#" class="btn btn-link btn-block text-dark text-left text-bold">Mujer</a>
+            <a href="#" class="btn btn-link btn-block text-error text-left text-bold">SALE</a>
+        </div>
+
+    </header>
+    
+    <!-- Seccion Hero 1-->
+    <section class="bg-dark text-center">
+        <!-- Imagen -->
+        <picture>
+            <img src="img/index/hero.png" alt="Nueva Colección Velos" class="img-responsive">
+        </picture>
+
+        <!-- Boton Compra -->
+        <div class="p-2">
+            <a href="#" class="btn btn-primary btn-lg text-bold text-uppercase">
+                COMPRAR AHORA
+            </a>
+        </div>
+    
+    </section>
+
+    <!-- Sección Grilla de 3 Cards de Productos -->
+    <section class="container grid-lg py-2 my-2">
+        
+        <!-- Título y btn "Ver Todos" -->
+        <div class="clearfix mb-2">
+            <div class="float-left">
+                <h3 class="text-bold text-dark mb-0">LO NUEVO</h3>
+                <p class="text-gray m-0">Los ingresos más recientes para tu entrenamiento.</p>
+            </div >
+            <a href="#" class="btn btn-link text-primary text-bold float-right mt-2">Ver todos</a>
+        </div>
+
+        <!-- Grilla de Cards -->
+        <div class="columns">
+            
+            <!-- Card 1: Adidas -->
+            <div class="column col-4 col-md-12 p-2">
+                <div class="card">
+                    <!-- Botón Favorito e Imagen -->
+                    <div class="card-image bg-gray p-2 text-center">
+                        <div class="text-right">
+                            <span class="c-hand h5 text-gray" title="Agregar a favoritos">♡</span>
+                        </div>
+                        <img src="img/productos/adidas_ultra_energy/r6.png" class="img-responsive">
+                    </div>
+                    <!-- Nombre y descripcion -->
+                    <div class="card-header pb-0">
+                        <div class="card-title h6 text-bold text-dark">Adidas Ultra Energy</div>
+                        <div class="card-subtitle text-gray">Zapatillas Running</div>
+                    </div>
+                    <!-- Precio -->
+                    <div class="card-body pt-1">
+                        <p class="text-dark h5 text-bold mb-0">$249.999</p>
+                    </div>
+                    <!-- Botón Compra -->
+                    <div class="card-footer">
+                        <a class="btn btn-block" href="detalle_producto.html?id=adidas_ultra">COMPRAR</a>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- Card 2: Double B -->
+            <div class="column col-4 col-md-12 p-2">
+                <div class="card">
+                    <!-- Botón Favorito e Imagen -->
+                    <div class="card-image bg-gray p-2 text-center">
+                        <div class="text-right">
+                            <span class="c-hand h5 text-gray" title="Agregar a favoritos">♡</span>
+                        </div>
+                        <img src="img/productos/duobleb_casual/r2.png" class="img-responsive">
+                    </div>
+                    <!-- Nombre y descripcion -->
+                    <div class="card-header pb-0">
+                        <div class="card-title h6 text-bold text-dark">Double B Casual</div>
+                        <div class="card-subtitle text-gray">Zapatillas Lifestyle</div>
+                    </div>
+                    <!-- Precio -->
+                    <div class="card-body pt-1">
+                        <p class="text-dark h5 text-bold mb-0">$289.999</p>
+                    </div>
+                    <!-- Botón Compra -->
+                    <div class="card-footer">
+                        <a class="btn btn-block" href="detalle_producto.html?id=duobleb_casual">COMPRAR</a>
+                    </div>
+                </div>  
+            </div>
+            
+            <!-- Card 3: Nike -->
+            <div class="column col-4 col-md-12 p-2">
+                <div class="card">
+                    <!-- Botón Favorito e Imagen -->
+                    <div class="card-image bg-gray p-2 text-center">
+                        <div class="text-right">
+                            <span class="c-hand h5 text-gray" title="Agregar a favoritos">♡</span>
+                        </div>
+                        <img src="img/productos/nike_court_version/r5.png" class="img-responsive">
+                    </div>
+                    <!-- Nombre y descripcion -->
+                    <div class="card-header pb-0">
+                        <div class="card-title h6 text-bold text-dark">Nike Court Version</div>
+                        <div class="card-subtitle text-gray">Training</div>
+                    </div>
+                    <!-- Precio -->
+                    <div class="card-body pt-1">
+                        <p class="text-dark h5 text-bold mb-0">$219.999</p>
+                    </div>
+                    <!-- Botón Compra -->
+                    <div class="card-footer">
+                        <a class="btn btn-block" href="detalle_producto.html?id=nike_court">COMPRAR</a>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Seccion Categorias -->
+    <section class="container grid-xl mb-2 mt-2">
+        <div class="columns">
+            <div class="column col-4 col-md-12 p-2 text-center">
+                <img src="img/index/running.png" class="img-responsive s-rounded">
+                <button class="btn mt-2">VER TODO RUNNING</button>
+            </div>
+            
+            <div class="column col-4 col-md-12 p-2 text-center">
+                <img src="img/index/training.png" class="img-responsive s-rounded">
+                <button class="btn mt-2">VER TODO TRAINING</button>
+            </div>
+            
+            <div class="column col-4 col-md-12 p-2 text-center">
+                <img src="img/index/lifestyle.png" class="img-responsive s-rounded">
+                <button class="btn mt-2">VER TODO LIFESTYLE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Hero 2 -->
+    <section class="container grid-xl mb-2 mt-2 bg-dark text-center s-rounded overflow-hidden p-0">
+        <picture>
+            <img src="img/index/hero_2.png" alt="Entrená sin límites" class="img-responsive">
+        </picture>
+        <div class="p-2 mb-2">
+            <a href="#" class="btn btn-primary btn-lg text-bold">VER COLECCIÓN</a>
+        </div>
+    </section>
+    
+    <!-- Seccion Marcas -->
+    <section class="container grid-xl mt-2 text-center">
+        <p class="pt-2 mt-2 text-dark h5 text-bold">MARCAS Y EQUIPOS</p>
+        
+        <div class="mt-2 mb-2 text-center">
+            
+            <div class="c-hand d-inline-block px-2 mx-2">
+                <figure class="avatar avatar-xl bg-gray">
+                    <img src="img/index/marca1.png" class="img-responsive p-2">
+                </figure>
+                <p class="text-dark mt-1 text-bold">Casual</p>
+            </div>
+            
+            <div class="c-hand d-inline-block px-2 mx-2">
+                <figure class="avatar avatar-xl bg-gray">
+                    <img src="img/index/marca2.png" class="img-responsive p-2">
+                </figure>
+                <p class="text-dark mt-1 text-bold">Jordan</p>
+            </div>
+
+            <div class="c-hand d-inline-block px-2 mx-2">
+                <figure class="avatar avatar-xl bg-gray">
+                    <img src="img/index/marca3.png" class="img-responsive p-2">
+                </figure>
+                <p class="text-dark mt-1 text-bold">Running</p>
+            </div>
+            
+            <div class="c-hand d-inline-block px-2 mx-2">
+                <figure class="avatar avatar-xl bg-gray">
+                    <img src="img/index/marca4.png" class="img-responsive p-2">
+                </figure>
+                <p class="text-dark mt-1 text-bold">Basketball</p>
+            </div>
+            
+            <div class="c-hand d-inline-block px-2 mx-2">
+                <figure class="avatar avatar-xl bg-gray">
+                    <img src="img/index/marca5.png" class="img-responsive p-2">
+                </figure>
+                <p class="text-dark mt-1 text-bold">Football</p>
+            </div>
+        
+        </div>
+
+        <div class="pb-2 mb-2">
+            <button class="btn btn-primary text-bold">VER TODAS LAS MARCAS</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light p-2">
+        <div class="container grid-xl my-2">
+            <div class="columns">
+                
+                <!-- Logo y frase -->
+                <div class="column col-3 col-md-12">
+                    <div class="tile tile-centered mb-2">
+                        <div class="tile-icon">
+                            <img src="img/index/logo.png" alt="Velos Logo" class="img-responsive" width="90">
+                        </div>
+                        <div class="tile-content">
+                            <p class="h4 text-bold text-light m-0 text-italic">VELOS</p>
+                        </div>
+
+                    </div>
+                    <p class="text-gray mt-1">Tu energía. Tu estilo. Tu momento.</p>
+                </div>
+
+                <!-- Productos -->
+                <div class="column col-2 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">PRODUCTOS</h6>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="text-gray">Hombre</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Mujer</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Niños</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Accesorios</a></li>
+                        </ul>
+                    </div>
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">PRODUCTOS</p>
+                            <a onclick="document.getElementById('menu_foot_producto').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <ul id="menu_foot_producto" class="nav d-hide mt-1">
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Hombre</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Mujer</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Niños</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Accesorios</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Empresa -->
+                <div class="column col-2 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">EMPRESA</h6>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="text-gray">Sobre nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Trabajá con nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Sucursales</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Prensa</a></li>
+                        </ul>
+                    </div>
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">EMPRESA</p>
+                            <a onclick="document.getElementById('menu_foot_empresa').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <ul id="menu_foot_empresa" class="nav d-hide mt-1">
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Sobre nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Trabajá con nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Sucursales</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Prensa</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ayuda -->
+                <div class="column col-2 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">AYUDA</h6>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="text-gray">Preguntas Frecuentes</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Envíos y Entregas</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Cambios y Devoluciones</a></li>
+                            <li class="nav-item"><a href="#" class="text-gray">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">AYUDA</p>
+                            <a onclick="document.getElementById('menu_foot_ayuda').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <ul id="menu_foot_ayuda" class="nav d-hide mt-1">
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Preguntas Frecuentes</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Envíos y Entregas</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Cambios y Devoluciones</a></li>
+                            <li class="nav-item"><a href="#" class="btn btn-link text-gray text-left">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="column col-3 col-md-12">
+                    <!-- PC -->
+                    <div class="hide-md">
+                        <h6 class="text-bold text-light mb-1">NEWSLETTER</h6>
+                        <p class="text-gray mb-1">Suscribite y recibí novedades.</p>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-input" placeholder="Tu email">
+                            <button class="btn btn-primary input-group-btn">→</button>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-action s-circle mr-1">X</a>
+                            <a href="#" class="btn btn-action s-circle mr-1">f</a>
+                            <a href="#" class="btn btn-action s-circle">in</a>
+                        </div>
+                    </div>
+
+                    <!-- Celular -->
+                    <div class="show-md mb-2">
+                        <div class="clearfix">
+                            <p class="text-gray text-bold float-left m-0">NEWSLETTER</p>
+                            <a onclick="document.getElementById('menu_foot_novedades').classList.toggle('d-hide')" class="float-right btn btn-link text-gray p-0 c-hand">
+                                <i class="icon icon-plus h4 m-0"></i>
+                            </a>
+                        </div>
+                        <div id="menu_foot_novedades" class="d-hide mt-1">
+                            <p class="text-gray mb-1">Suscribite y recibí novedades.</p>
+                            <div class="input-group mb-2">
+                                <input type="email" class="form-input" placeholder="Tu email">
+                                <button class="btn btn-primary input-group-btn">→</button>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-action s-circle mr-1">X</a>
+                                <a href="#" class="btn btn-action s-circle mr-1">f</a>
+                                <a href="#" class="btn btn-action s-circle">in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Separador-->
+            <div class="divider text-center" data-content=""></div>
+
+            <!-- Derechos -->
+            <div class="columns text-gray text-small mt-2 pt-2">
+                <div class="column col-6 col-sm-12">
+                    <p class="m-0">📍 <strong>Río Cuarto, Córdoba.</strong> © 2026 Velos S.R.L. Todos los derechos reservados.</p>
+                </div>
+                <div class="column col-6 col-sm-12 text-right hide-md">
+                    <a href="#" class="text-gray mr-2">Términos y condiciones</a>
+                    <a href="#" class="text-gray">Política de privacidad</a>
+                </div>
+                <div class="column col-12 col-sm-12 show-md p-2">
+                    <a href="#" class="text-gray mr-2">Términos y condiciones</a>
+                    <a href="#" class="text-gray">Política de privacidad</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
+
